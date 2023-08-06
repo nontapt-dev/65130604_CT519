@@ -16,7 +16,7 @@ function App() {
       setIsLoading(true);
 
       try {
-        const response = await fetch("http://localhost/goals");
+        const response = await fetch("http://3.25.94.126/goals");
 
         const resData = await response.json();
 
@@ -41,7 +41,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost/goals", {
+      const response = await fetch("http://3.25.94.126/goals", {
         method: "POST",
         body: JSON.stringify({
           text: goalText,
@@ -80,7 +80,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost/goals/" + goalId, {
+      const response = await fetch("http://3.25.94.126/goals/" + goalId, {
         method: "DELETE",
       });
 
@@ -105,14 +105,9 @@ function App() {
 
   return (
     <div>
-      <h1 style={{ color: "white", textAlign: "center" }}>Khanitta</h1>
-      <h3 style={{ color: "white", textAlign: "center" }}>65130488</h3>
-      <Card>
-        <img
-          style={{ width: "24rem", objectFit: "contain", alignItems: "center" }}
-          src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t39.30808-6/323557048_2966907313615391_8423888818852768294_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGlh3fiq4_67alK5uGX3a943LJ_JEUHLKzcsn8kRQcsrF3YClzFVhYZsSHbG4s7jgnZiNoPbpXuZXK3JLrJVPW8&_nc_ohc=O-_OHbzDnIMAX-vqjv-&_nc_ht=scontent.fbkk2-6.fna&oh=00_AfAoZacacHPUm6tSnEezFK3edSfKN793M-nO7I-kkU1qLg&oe=64D37C62"
-        />
-      </Card>
+      <h1 style={{ color: "white", textAlign: "center" }}>name:nontapat lastname:khieorat</h1>
+      <h3 style={{ color: "white", textAlign: "center" }}>ID: 65130604</h3>
+    
       <Card>
         <Research />
       </Card>

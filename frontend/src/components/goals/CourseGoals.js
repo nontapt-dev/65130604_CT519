@@ -10,7 +10,7 @@ function CourseGoals(props) {
   return (
     <section id='course-goals'>
       <Card>
-        {hasNoGoals && <h2>No Contact found. Start adding some!</h2>}
+        {hasNoGoals && <h2>No Books found. Start adding some!</h2>}
         <ul>
           {props.goals.map((goal) => (
             <GoalItem

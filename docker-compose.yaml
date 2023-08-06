@@ -3,8 +3,8 @@ services:
   mongodb:
     image: "mongo"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: lim
-      MONGO_INITDB_ROOT_PASSWORD: secret
+      MONGO_INITDB_ROOT_USERNAME: tle
+      MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - data:/data/db
 
